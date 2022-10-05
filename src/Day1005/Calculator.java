@@ -2,25 +2,29 @@ package Day1005;
 
 public class Calculator {
 
-    public void plus (int a, int b) {
-        System.out.println(a+b);
+    private int a = 10;
+    private int b = 20;
+
+    public Calculator() {
+        this.a = a;
+        this.b = b;
     }
 
-    public void minus (int a, int b) {
+    public void plus() {
+        System.out.println(a + b);
+    }
+
+    public void minus () {
         System.out.println(a-b);
     }
 
-    public void multiple (int a, int b) {
+    public void multiple () {
         System.out.println(a*b);
     }
 
-    public void divide (double a, double b) {
-        double result = a / b;
+    public void divide () {
+        double result = ((double)a / b);
         System.out.println(result);
     }
-
-
-
-
 
 }

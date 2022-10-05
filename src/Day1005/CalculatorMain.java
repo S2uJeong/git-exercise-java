@@ -6,11 +6,10 @@ public class CalculatorMain {
 
         Calculator calculator = new Calculator();
 
-        calculator.plus(1,2);
-        calculator.minus(1,2);
-        calculator.multiple(1,2);
-        calculator.divide(3,2);
-
+        calculator.plus();
+        calculator.minus();
+        calculator.multiple();
+        calculator.divide();
 
     }
 
