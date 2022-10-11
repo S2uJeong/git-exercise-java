@@ -1,14 +1,19 @@
 package day1011;
 
 public class SumOfDigit {
-    // 방법1) n을 String으로 변경, String을 loop 돌면서 parseInt 후 더한다.
-    // => 정답은 되지만 효율성이 좋지 않음, 변환이 너무 많음
-    public int solution(int n) {
-        String str = String.valueOf(n);
+   // 방법 2) % 연산 이용 몫, 나머지
+
+    public int solution(int n) {String str = String.valueOf(n);
         int result = 0;
-        for(int i =0; i <str.length(); i++) {
-            result += Integer.parseInt(String.valueOf((str.charAt(i))));
+
+        while (n > 0) {
+
+            result += n % 10; // '/'연산보다 나머지 구하는 행을 먼저 써줘야 한다.
+
+            n = n / 10 ;
+
         }
+
         return result;
     }
 
