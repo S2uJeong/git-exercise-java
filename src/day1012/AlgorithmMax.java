@@ -3,7 +3,9 @@ package day1012;
 public class AlgorithmMax {
 
     public int getMax(int[] arr) {
-        int maxValue = 0;
+        // int maxValue = 0;
+        int maxValue = arr[0];
+
         for (int i = 0; i < arr.length; i++) {
 
             if (arr[i] > maxValue) {
