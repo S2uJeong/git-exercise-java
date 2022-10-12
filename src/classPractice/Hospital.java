@@ -3,19 +3,17 @@ package classPractice;
 public class Hospital {
     private String id;
     private String address;
-
     private String district;
     private String category;
     private Integer emergencyRoom;
     private String name;
     private String subdividion;
 
-     private void setDistrict() {
-        String [] splitted = address.split(" ");
-        this.district = splitted[0] + " " + splitted[1];
-    }
+
 
     public String getDistrict() {
+        String [] splitted = address.split("\\s");
+        district = splitted[0] + " " + splitted[1];
          return district;
     }
 
